@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Calibri",sans-serif;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:860px;
+    height: 1094px;
+    margin: 0 auto;
+    padding-top:130px;
+    background-image: url("../images/iphone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.box__cardimg {
+    width: 370px;
+    height:240px;
+    margin-bottom: 40px;
+}
+
+.form__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.form__item {
+    margin-bottom: 40px;
+}
+
+.form__lable {
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+}
+
+.form__icon {
+    width:30px;
+    height:25px;
+    margin-right: 20px;
+}
+
+.form__textbox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__strongtext {
+    font-size: 35px;
+    font-weight: 700;
+    color: #0E0000;
+}
+
+.form__lighttext {
+    font-size: 20px;
+    font-weight: 400;
+    color:#ABADB0;
+}
+
+.input__controller {
+    display: flex;
+    width: 90px;
+    height:40px;
+    border:2px solid #E5E5E5;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+}
+
+.switch__button{
+    display: block;
+    width: 36px;
+    height:37px;
+    border:2px solid #E3E3E3;
+    border-radius:50%;
+    background-color:#ffffff;
+    transition:  0.2s ease;
+}
+
+.form__checkbox:checked~.input__controller{
+    background-color: #5288F4;
+}
+
+.form__checkbox:checked~.input__controller>.switch__button{
+    transform: translateX(26px);
+    border-color:#5288F4 ;
+}
